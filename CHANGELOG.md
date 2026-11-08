@@ -8,6 +8,7 @@ Newest first. `Unreleased` is what is on `main` and not yet tagged.
 
 ## Unreleased
 
+- OpenBot Desktop's Status window, Settings, This computer, Copy diagnostics and About name the version of the build that is installed, as the installer and Windows do: an internal build after 0.3.3 says `0.3.4-internal.892.g0c140734ecf0`, not 0.3.3. A release still says exactly its own version.
 - Settings, Computer lists the Teach a Bot browser as your OpenBot browser, with Clear browser data, not as "A Bot no longer here"; Admin, Computers names whose OpenBot browser each one is.
 - Onboarding's Welcome says what always asks (deleting, sending, sharing, posting) above the approvals switch, which is now "Always ask before making changes" there and in Settings, Approvals, with the same words in both.
 - A conversation shows the Bot is still working through a run of tool calls: the step still running
