@@ -1,0 +1,17 @@
+{
+  "name": "@aspace-v5/openbot-adapter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "A'Space adapter for Amdkn/openbot (gel 2b5b14f, F8 pas 7) — stdlib only, no upstream code",
+  "scripts": {
+    "test": "bun test tests/adapter.test.ts"
+  },
+  "aspace": {
+    "gel": "2b5b14fc163fd12734ca871dddc68d8ffa31a1b7",
+    "bind": "fea23711f94f4224770338ebd3f0164b8d7d5a02",
+    "fork": "Amdkn/openbot",
+    "skin": "openbot"
+  }
+}

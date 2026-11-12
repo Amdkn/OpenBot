@@ -1,0 +1,68 @@
+{
+  "adapter": "aspace-openbot-adapter",
+  "version": "0.1.0",
+  "fork": "Amdkn/openbot",
+  "upstream": "CopilotKit/OpenBot",
+  "gel": "2b5b14fc163fd12734ca871dddc68d8ffa31a1b7",
+  "gel_short": "2b5b14f",
+  "bind": "fea23711f94f4224770338ebd3f0164b8d7d5a02",
+  "bind_blob": "087bd7f270579142a84956546d00335db91aa439",
+  "family": "CORE_A0_KERNEL",
+  "owner": "A0-AMADEUS / S1-RICK",
+  "license": "MIT",
+  "skin": {
+    "id": "openbot",
+    "name": "OpenBot",
+    "kind": "platform",
+    "trait": "plateforme : accueille n'importe quel agent AG-UI comme coworker avec son ordinateur"
+  },
+  "gateway": {
+    "endpoint": "http://127.0.0.1:31415/v1/chat/completions",
+    "chain": [
+      "freellmapi/auto",
+      "claude-sonnet-4-5",
+      "qwen3.8-max",
+      "gemini-3.8-flash",
+      "deepseek-v4-flash"
+    ],
+    "retest_minutes": 15,
+    "forbidden_keys": [
+      "CPK_INTELLIGENCE_API_KEY",
+      "CPK_TELEMETRY_ID",
+      "OPENAI_API_KEY"
+    ]
+  },
+  "computer_service": {
+    "port": 4100,
+    "header": "x-openbot-bot-id"
+  },
+  "triage": {
+    "ported": 7,
+    "surfaces": 5,
+    "abandoned": 22,
+    "total": 34
+  },
+  "telemetry_triggers": {
+    "sink-sdk": {
+      "applies": "APPLIQUE",
+      "verdict": "ABANDONNÉ"
+    },
+    "product-telemetry": {
+      "applies": "APPLIQUE",
+      "verdict": "ABANDONNÉ"
+    },
+    "desktop-telemetry": {
+      "applies": "APPLIQUE",
+      "verdict": "ABANDONNÉ"
+    },
+    "setup-telemetry": {
+      "applies": "N/A",
+      "verdict": "N/A"
+    },
+    "otel-export": {
+      "applies": "APPLIQUE",
+      "verdict": "ABSENT-CONFIRME"
+    }
+  },
+  "dependency_pas6": "NAMED — fonctions prime-agent (RLM, /refine, Continual Harness) absentes de la base 655b2a4 ; le chemin /refine de la surface est conditionnel au merge de 9050a1f ; le reste est inconditionnel (§D9)"
+}
