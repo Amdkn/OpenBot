@@ -6,7 +6,7 @@
   "license": "MIT",
   "description": "A'Space adapter for Amdkn/openbot (gel 2b5b14f, F8 pas 7) — stdlib only, no upstream code",
   "scripts": {
-    "test": "bun test tests/adapter.test.ts"
+    "test": "bun test ./tests/adapter.checks.ts"
   },
   "aspace": {
     "gel": "2b5b14fc163fd12734ca871dddc68d8ffa31a1b7",
